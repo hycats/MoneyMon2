@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyMon2", "MoneyMon2\MoneyMon2.csproj", "{B31E328C-36D3-410D-8060-E4D405C02371}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B31E328C-36D3-410D-8060-E4D405C02371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B31E328C-36D3-410D-8060-E4D405C02371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B31E328C-36D3-410D-8060-E4D405C02371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B31E328C-36D3-410D-8060-E4D405C02371}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05EAD8C9-3ECB-4649-BD7D-C298B64812EB}
+	EndGlobalSection
+EndGlobal
