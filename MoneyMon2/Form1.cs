@@ -16,5 +16,10 @@ namespace MoneyMon2
         {
             InitializeComponent();
         }
+
+        private void miFileExit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
