@@ -47,10 +47,23 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbMoney = new System.Windows.Forms.Label();
             this.btMoney = new System.Windows.Forms.Button();
+            this.dgvTop = new System.Windows.Forms.DataGridView();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Expense = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Breakdown = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Product = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Checked = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Income = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Outgo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Balance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Comment = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTop)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -68,6 +81,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.dgvTop);
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Controls.Add(this.panel2);
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
@@ -163,9 +177,11 @@
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 1209);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 1188);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1974, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1974, 43);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -240,6 +256,85 @@
             this.btMoney.Text = "入力";
             this.btMoney.UseVisualStyleBackColor = true;
             // 
+            // dgvTop
+            // 
+            this.dgvTop.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvTop.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTop.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Date,
+            this.Expense,
+            this.Breakdown,
+            this.Product,
+            this.Checked,
+            this.Income,
+            this.Outgo,
+            this.Balance,
+            this.Comment});
+            this.dgvTop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvTop.Location = new System.Drawing.Point(3, 77);
+            this.dgvTop.Name = "dgvTop";
+            this.dgvTop.RowTemplate.Height = 33;
+            this.dgvTop.Size = new System.Drawing.Size(1456, 1113);
+            this.dgvTop.TabIndex = 3;
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(274, 38);
+            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "日付";
+            this.Date.Name = "Date";
+            this.Date.ReadOnly = true;
+            // 
+            // Expense
+            // 
+            this.Expense.HeaderText = "費目";
+            this.Expense.Name = "Expense";
+            this.Expense.ReadOnly = true;
+            // 
+            // Breakdown
+            // 
+            this.Breakdown.HeaderText = "内訳";
+            this.Breakdown.Name = "Breakdown";
+            this.Breakdown.ReadOnly = true;
+            // 
+            // Product
+            // 
+            this.Product.HeaderText = "品名";
+            this.Product.Name = "Product";
+            this.Product.ReadOnly = true;
+            // 
+            // Checked
+            // 
+            this.Checked.HeaderText = "済";
+            this.Checked.Name = "Checked";
+            this.Checked.ReadOnly = true;
+            // 
+            // Income
+            // 
+            this.Income.HeaderText = "収入";
+            this.Income.Name = "Income";
+            this.Income.ReadOnly = true;
+            // 
+            // Outgo
+            // 
+            this.Outgo.HeaderText = "支出";
+            this.Outgo.Name = "Outgo";
+            // 
+            // Balance
+            // 
+            this.Balance.HeaderText = "残高";
+            this.Balance.Name = "Balance";
+            // 
+            // Comment
+            // 
+            this.Comment.HeaderText = "備考";
+            this.Comment.Name = "Comment";
+            this.Comment.ReadOnly = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
@@ -254,6 +349,9 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTop)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,6 +378,17 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lbMoney;
         private System.Windows.Forms.Button btMoney;
+        private System.Windows.Forms.DataGridView dgvTop;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Expense;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Breakdown;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Product;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Checked;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Income;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Outgo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Balance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Comment;
     }
 }
 
