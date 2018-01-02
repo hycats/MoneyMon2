@@ -17,5 +17,14 @@ namespace MoneyMon2
             InitializeComponent();
         }
 
+        private void dgvTop_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            foreach (DataGridViewColumn column in dgvTop.Columns)
+            {
+                //    BindingSource bs = (BindingSource)dgvTop.DataSource;
+                //    column.HeaderText = ((DataTable)((BindingSource)dgvTop.DataSource).DataSource).Columns[column.Index].Caption;
+                column.HeaderText = dataSet1.DataTable1.Columns[column.Index].Caption;
+            }
+        }
     }
 }
