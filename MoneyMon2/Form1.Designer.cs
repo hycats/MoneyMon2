@@ -29,16 +29,26 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dgvTop = new System.Windows.Forms.DataGridView();
-            this.dataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.expenseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.breakdownDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.checkedDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.incomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.outgoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.balanceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.commentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataTable1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet1 = new MoneyMon2.DataSet1();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cbAccounts = new System.Windows.Forms.ComboBox();
+            this.dtblAccounts1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.btMoney = new System.Windows.Forms.Button();
             this.lbMoney = new System.Windows.Forms.Label();
@@ -53,26 +63,26 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.dataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dtblAccounts1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet11 = new MoneyMon2.DataSet1();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.expenseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.breakdownDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.checkedDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.incomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.outgoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.balanceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.commentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtblExpense1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTop)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtblAccounts1BindingSource1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtblAccounts1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtblExpense1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -103,16 +113,18 @@
             // 
             // dgvTop
             // 
+            this.dgvTop.AllowUserToAddRows = false;
+            this.dgvTop.AllowUserToDeleteRows = false;
             this.dgvTop.AutoGenerateColumns = false;
             this.dgvTop.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("MS UI Gothic", 9.047121F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTop.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("MS UI Gothic", 9.047121F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTop.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvTop.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTop.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dateDataGridViewTextBoxColumn,
@@ -124,27 +136,81 @@
             this.outgoDataGridViewTextBoxColumn,
             this.balanceDataGridViewTextBoxColumn,
             this.commentDataGridViewTextBoxColumn});
-            this.dgvTop.DataSource = this.dataTable1BindingSource;
+            this.dgvTop.DataSource = this.dataTable1BindingSource1;
             this.dgvTop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvTop.Location = new System.Drawing.Point(3, 77);
             this.dgvTop.Name = "dgvTop";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("MS UI Gothic", 9.047121F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTop.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("MS UI Gothic", 9.047121F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTop.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvTop.RowTemplate.Height = 33;
             this.dgvTop.Size = new System.Drawing.Size(1456, 1113);
             this.dgvTop.TabIndex = 3;
             this.dgvTop.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvTop_DataBindingComplete);
             // 
-            // dataTable1BindingSource
+            // dateDataGridViewTextBoxColumn
             // 
-            this.dataTable1BindingSource.DataMember = "DataTable1";
-            this.dataTable1BindingSource.DataSource = this.dataSet1BindingSource;
+            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
+            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
+            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
+            // 
+            // expenseDataGridViewTextBoxColumn
+            // 
+            this.expenseDataGridViewTextBoxColumn.DataPropertyName = "Expense";
+            this.expenseDataGridViewTextBoxColumn.HeaderText = "Expense";
+            this.expenseDataGridViewTextBoxColumn.Name = "expenseDataGridViewTextBoxColumn";
+            // 
+            // breakdownDataGridViewTextBoxColumn
+            // 
+            this.breakdownDataGridViewTextBoxColumn.DataPropertyName = "Breakdown";
+            this.breakdownDataGridViewTextBoxColumn.HeaderText = "Breakdown";
+            this.breakdownDataGridViewTextBoxColumn.Name = "breakdownDataGridViewTextBoxColumn";
+            // 
+            // productDataGridViewTextBoxColumn
+            // 
+            this.productDataGridViewTextBoxColumn.DataPropertyName = "Product";
+            this.productDataGridViewTextBoxColumn.HeaderText = "Product";
+            this.productDataGridViewTextBoxColumn.Name = "productDataGridViewTextBoxColumn";
+            // 
+            // checkedDataGridViewCheckBoxColumn
+            // 
+            this.checkedDataGridViewCheckBoxColumn.DataPropertyName = "Checked";
+            this.checkedDataGridViewCheckBoxColumn.HeaderText = "Checked";
+            this.checkedDataGridViewCheckBoxColumn.Name = "checkedDataGridViewCheckBoxColumn";
+            // 
+            // incomeDataGridViewTextBoxColumn
+            // 
+            this.incomeDataGridViewTextBoxColumn.DataPropertyName = "Income";
+            this.incomeDataGridViewTextBoxColumn.HeaderText = "Income";
+            this.incomeDataGridViewTextBoxColumn.Name = "incomeDataGridViewTextBoxColumn";
+            // 
+            // outgoDataGridViewTextBoxColumn
+            // 
+            this.outgoDataGridViewTextBoxColumn.DataPropertyName = "Outgo";
+            this.outgoDataGridViewTextBoxColumn.HeaderText = "Outgo";
+            this.outgoDataGridViewTextBoxColumn.Name = "outgoDataGridViewTextBoxColumn";
+            // 
+            // balanceDataGridViewTextBoxColumn
+            // 
+            this.balanceDataGridViewTextBoxColumn.DataPropertyName = "Balance";
+            this.balanceDataGridViewTextBoxColumn.HeaderText = "Balance";
+            this.balanceDataGridViewTextBoxColumn.Name = "balanceDataGridViewTextBoxColumn";
+            // 
+            // commentDataGridViewTextBoxColumn
+            // 
+            this.commentDataGridViewTextBoxColumn.DataPropertyName = "Comment";
+            this.commentDataGridViewTextBoxColumn.HeaderText = "Comment";
+            this.commentDataGridViewTextBoxColumn.Name = "commentDataGridViewTextBoxColumn";
+            // 
+            // dataTable1BindingSource1
+            // 
+            this.dataTable1BindingSource1.DataMember = "DataTable1";
+            this.dataTable1BindingSource1.DataSource = this.dataSet1BindingSource;
             // 
             // dataSet1BindingSource
             // 
@@ -167,11 +233,21 @@
             // 
             // cbAccounts
             // 
+            this.cbAccounts.DataSource = this.dtblAccounts1BindingSource1;
+            this.cbAccounts.DisplayMember = "Name";
+            this.cbAccounts.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbAccounts.FormattingEnabled = true;
             this.cbAccounts.Location = new System.Drawing.Point(29, 14);
             this.cbAccounts.Name = "cbAccounts";
             this.cbAccounts.Size = new System.Drawing.Size(364, 32);
             this.cbAccounts.TabIndex = 0;
+            this.cbAccounts.ValueMember = "Id";
+            this.cbAccounts.SelectedIndexChanged += new System.EventHandler(this.cbAccounts_SelectedIndexChanged);
+            // 
+            // dtblAccounts1BindingSource1
+            // 
+            this.dtblAccounts1BindingSource1.DataMember = "dtblAccounts1";
+            this.dtblAccounts1BindingSource1.DataSource = this.dataSet1BindingSource;
             // 
             // panel2
             // 
@@ -265,11 +341,14 @@
             // 
             // cbExpense
             // 
+            this.cbExpense.DataSource = this.dtblExpense1BindingSource;
+            this.cbExpense.DisplayMember = "Name";
             this.cbExpense.FormattingEnabled = true;
             this.cbExpense.Location = new System.Drawing.Point(127, 406);
             this.cbExpense.Name = "cbExpense";
             this.cbExpense.Size = new System.Drawing.Size(352, 32);
             this.cbExpense.TabIndex = 1;
+            this.cbExpense.ValueMember = "Id";
             // 
             // monthCalendar1
             // 
@@ -309,6 +388,21 @@
             this.tabPage4.Text = "設定";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // dataTable1BindingSource
+            // 
+            this.dataTable1BindingSource.DataMember = "DataTable1";
+            this.dataTable1BindingSource.DataSource = this.dataSet1BindingSource;
+            // 
+            // dtblAccounts1BindingSource
+            // 
+            this.dtblAccounts1BindingSource.DataMember = "dtblAccounts1";
+            this.dtblAccounts1BindingSource.DataSource = this.dataSet11;
+            // 
+            // dataSet11
+            // 
+            this.dataSet11.DataSetName = "DataSet1";
+            this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
@@ -326,59 +420,10 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(274, 38);
             this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
-            // dateDataGridViewTextBoxColumn
+            // dtblExpense1BindingSource
             // 
-            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
-            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
-            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
-            // 
-            // expenseDataGridViewTextBoxColumn
-            // 
-            this.expenseDataGridViewTextBoxColumn.DataPropertyName = "Expense";
-            this.expenseDataGridViewTextBoxColumn.HeaderText = "Expense";
-            this.expenseDataGridViewTextBoxColumn.Name = "expenseDataGridViewTextBoxColumn";
-            // 
-            // breakdownDataGridViewTextBoxColumn
-            // 
-            this.breakdownDataGridViewTextBoxColumn.DataPropertyName = "Breakdown";
-            this.breakdownDataGridViewTextBoxColumn.HeaderText = "Breakdown";
-            this.breakdownDataGridViewTextBoxColumn.Name = "breakdownDataGridViewTextBoxColumn";
-            // 
-            // productDataGridViewTextBoxColumn
-            // 
-            this.productDataGridViewTextBoxColumn.DataPropertyName = "Product";
-            this.productDataGridViewTextBoxColumn.HeaderText = "Product";
-            this.productDataGridViewTextBoxColumn.Name = "productDataGridViewTextBoxColumn";
-            // 
-            // checkedDataGridViewCheckBoxColumn
-            // 
-            this.checkedDataGridViewCheckBoxColumn.DataPropertyName = "Checked";
-            this.checkedDataGridViewCheckBoxColumn.HeaderText = "Checked";
-            this.checkedDataGridViewCheckBoxColumn.Name = "checkedDataGridViewCheckBoxColumn";
-            // 
-            // incomeDataGridViewTextBoxColumn
-            // 
-            this.incomeDataGridViewTextBoxColumn.DataPropertyName = "Income";
-            this.incomeDataGridViewTextBoxColumn.HeaderText = "Income";
-            this.incomeDataGridViewTextBoxColumn.Name = "incomeDataGridViewTextBoxColumn";
-            // 
-            // outgoDataGridViewTextBoxColumn
-            // 
-            this.outgoDataGridViewTextBoxColumn.DataPropertyName = "Outgo";
-            this.outgoDataGridViewTextBoxColumn.HeaderText = "Outgo";
-            this.outgoDataGridViewTextBoxColumn.Name = "outgoDataGridViewTextBoxColumn";
-            // 
-            // balanceDataGridViewTextBoxColumn
-            // 
-            this.balanceDataGridViewTextBoxColumn.DataPropertyName = "Balance";
-            this.balanceDataGridViewTextBoxColumn.HeaderText = "Balance";
-            this.balanceDataGridViewTextBoxColumn.Name = "balanceDataGridViewTextBoxColumn";
-            // 
-            // commentDataGridViewTextBoxColumn
-            // 
-            this.commentDataGridViewTextBoxColumn.DataPropertyName = "Comment";
-            this.commentDataGridViewTextBoxColumn.HeaderText = "Comment";
-            this.commentDataGridViewTextBoxColumn.Name = "commentDataGridViewTextBoxColumn";
+            this.dtblExpense1BindingSource.DataMember = "dtblExpense1";
+            this.dtblExpense1BindingSource.DataSource = this.dataSet1BindingSource;
             // 
             // Form1
             // 
@@ -389,17 +434,23 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTop)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtblAccounts1BindingSource1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtblAccounts1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtblExpense1BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -426,11 +477,15 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lbMoney;
         private System.Windows.Forms.Button btMoney;
-        private System.Windows.Forms.DataGridView dgvTop;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.BindingSource dataSet1BindingSource;
         private DataSet1 dataSet1;
         private System.Windows.Forms.BindingSource dataTable1BindingSource;
+        private System.Windows.Forms.DataGridView dgvTop;
+        private System.Windows.Forms.BindingSource dtblAccounts1BindingSource;
+        private DataSet1 dataSet11;
+        private System.Windows.Forms.BindingSource dataTable1BindingSource1;
+        private System.Windows.Forms.BindingSource dtblAccounts1BindingSource1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn expenseDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn breakdownDataGridViewTextBoxColumn;
@@ -440,6 +495,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn outgoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn balanceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn commentDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource dtblExpense1BindingSource;
     }
 }
 

@@ -27,6 +27,28 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="dtblAccounts1" msprop:Generator_TableClassName="dtblAccounts1DataTable" msprop:Generator_TableVarName="tabledtblAccounts1" msprop:Generator_RowChangedName="dtblAccounts1RowChanged" msprop:Generator_TablePropName="dtblAccounts1" msprop:Generator_RowDeletingName="dtblAccounts1RowDeleting" msprop:Generator_RowChangingName="dtblAccounts1RowChanging" msprop:Generator_RowEvHandlerName="dtblAccounts1RowChangeEventHandler" msprop:Generator_RowDeletedName="dtblAccounts1RowDeleted" msprop:Generator_RowClassName="dtblAccounts1Row" msprop:Generator_UserTableName="dtblAccounts1" msprop:Generator_RowEvArgName="dtblAccounts1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" type="xs:int" minOccurs="0" />
+              <xs:element name="InitialMoney" msprop:Generator_ColumnVarNameInTable="columnInitialMoney" msprop:Generator_ColumnPropNameInRow="InitialMoney" msprop:Generator_ColumnPropNameInTable="InitialMoneyColumn" msprop:Generator_UserColumnName="InitialMoney" type="xs:int" minOccurs="0" />
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtblExpense1" msprop:Generator_TableClassName="dtblExpense1DataTable" msprop:Generator_TableVarName="tabledtblExpense1" msprop:Generator_TablePropName="dtblExpense1" msprop:Generator_RowDeletingName="dtblExpense1RowDeleting" msprop:Generator_RowChangingName="dtblExpense1RowChanging" msprop:Generator_RowEvHandlerName="dtblExpense1RowChangeEventHandler" msprop:Generator_RowDeletedName="dtblExpense1RowDeleted" msprop:Generator_UserTableName="dtblExpense1" msprop:Generator_RowChangedName="dtblExpense1RowChanged" msprop:Generator_RowEvArgName="dtblExpense1RowChangeEvent" msprop:Generator_RowClassName="dtblExpense1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Inout" msprop:Generator_ColumnVarNameInTable="columnInout" msprop:Generator_ColumnPropNameInRow="Inout" msprop:Generator_ColumnPropNameInTable="InoutColumn" msprop:Generator_UserColumnName="Inout" type="xs:int" minOccurs="0" />
+              <xs:element name="Editable" msprop:Generator_ColumnVarNameInTable="columnEditable" msprop:Generator_ColumnPropNameInRow="Editable" msprop:Generator_ColumnPropNameInTable="EditableColumn" msprop:Generator_UserColumnName="Editable" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Name2" msprop:Generator_ColumnVarNameInTable="columnName2" msprop:Generator_ColumnPropNameInRow="Name2" msprop:Generator_ColumnPropNameInTable="Name2Column" msprop:Generator_UserColumnName="Name2" type="xs:string" minOccurs="0" />
+              <xs:element name="Breakdown" msprop:Generator_ColumnVarNameInTable="columnBreakdown" msprop:Generator_ColumnPropNameInRow="Breakdown" msprop:Generator_ColumnPropNameInTable="BreakdownColumn" msprop:Generator_UserColumnName="Breakdown" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
   </xs:element>
